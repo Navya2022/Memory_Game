@@ -1,15 +1,21 @@
 body{
     background-image: url('component_images/background.gif');
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    justify-content: center;
+    gap: 20px;             
+    width: 100%;
+    height: auto;
 }
-button{
+
+#play {
     background-image: url("component_images/play_button.png");
-    background-size: cover; 
+    background-size: cover;
     padding: 20px 60px;
-    position: absolute;
-    top: 620px; 
-    left: 660px;
     border-radius: 30px;
+    margin-top: 550px;
 }
 
 #Instructions{
