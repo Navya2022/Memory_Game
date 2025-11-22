@@ -1,0 +1,61 @@
+body{
+    background-image: url('component_images/background.gif');
+    background-size: cover;
+}
+button{
+    background-image: url("component_images/play_button.png");
+    background-size: cover; 
+    padding: 20px 60px;
+    position: absolute;
+    top: 620px; 
+    left: 660px;
+    border-radius: 30px;
+}
+
+#Instructions{
+    background-image: url("component_images/instructions_dialog.png");
+    background-size: cover; 
+    padding: 20px 40px;
+    position: absolute;
+    top: 650px; 
+    left: 600px;
+    border-radius: 30px;
+}
+#myDialog {
+    
+    border: 5px solid black;
+    border-radius: 25px;
+    background: url("component_images/clear.png");
+    background-size: contain;
+    padding: 40px;
+    width: 1050px;
+    height: 550px;
+}
+#custom{
+    background-image: url("component_images/custom.png");
+    background-size: cover; 
+    padding: 20px 60px;
+    position: absolute;
+    top: 150px; 
+    left: 100px;
+    border-radius: 30px;
+    width: 190px;
+    height: 40px;
+    position: absolute;
+    top: 530px; 
+    left: 230px;
+}
+#lazy{
+    background-image: url("component_images/lazy.png");
+    background-size: cover; 
+    padding: 20px 60px;
+    position: absolute;
+    top: 150px; 
+    left: 500px;
+    border-radius: 30px;
+    width: 190px;
+    height: 40px;
+    position: absolute;
+    top: 530px; 
+    left: 650px;
+}

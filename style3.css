@@ -1,0 +1,14 @@
+body{
+    background-image: url('component_images/Winner.gif');
+    background-size: cover;
+}
+button{
+    background-image: url("component_images/back_button.png");
+    background-size: cover; 
+    padding: 20px 60px;
+    position: absolute;
+    top: 700px; 
+    left: 630px;
+    width: 165px;
+    border-radius: 30px;
+}

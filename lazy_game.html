@@ -1,0 +1,54 @@
+<html>
+    <title>Sample Page</title>
+    <head>
+        <link rel="stylesheet" href="style4.css">
+    </head>
+    <body>
+
+        <dialog id="myDialog">
+        <form method="dialog">
+    <button id = "ok" onclick="Rebus_game()"></button>
+    
+  </form>
+</dialog>
+    
+    </body>
+    <script>
+        document.getElementById('myDialog').showModal();
+        const lazy_pairs = [
+        { id: 1, img: "lazy_images/img1.png", text: "One in a million" },
+        { id: 2, img: "lazy_images/img2.png", text: "Try to understand" },
+        { id: 3, img: "lazy_images/img3.png", text: "Greenhouse" },
+        { id: 4, img: "lazy_images/img4.png", text: "Travel overseas" },
+        { id: 5, img: "lazy_images/img5.png", text: "But on second thought" },
+        { id: 6, img: "lazy_images/img6.png", text: "Crossroads" },
+        { id: 7, img: "lazy_images/img7.png", text: "Summer (sum R)" },
+        { id: 8, img: "lazy_images/img8.png", text: "Metaphor" }
+    ];
+
+    let questions = [];
+    let answers = [];
+
+    for (i=0; i<lazy_pairs.length; i++) {
+        
+        questions.push({
+            type: "image",
+            content: lazy_pairs[i].img
+        });
+
+        answers.push({
+            type: "text",
+            content: lazy_pairs[i].text
+        });
+    }
+    function Rebus_game() {
+        document.getElementById('myDialog').close();
+        localStorage.setItem("flashcards", JSON.stringify({ questions, answers }));
+        window.location.href = "card_game.html";
+    }
+    
+    </script>
+  </form>
+</dialog>
+    
+</html>

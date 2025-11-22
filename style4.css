@@ -1,0 +1,24 @@
+#myDialog {
+    
+    border: 5px solid black;
+    border-radius: 25px;
+    background: url("component_images/Rebus.png");
+    background-size: contain;
+    padding: 40px;
+    width: 1050px;
+    height: 550px;
+}
+#ok{
+    background-image: url("component_images/ok.png");
+    background-size: cover; 
+    padding: 20px 60px;
+    position: absolute;
+    top: 150px; 
+    left: 100px;
+    border-radius: 30px;
+    width: 190px;
+    height: 40px;
+    position: absolute;
+    top: 530px; 
+    left: 730px;
+}

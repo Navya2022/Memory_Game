@@ -1,0 +1,99 @@
+body{
+    background-image: url('component_images/card_back.png');
+    background-size: cover;
+}
+
+
+button{
+    background-image: url("component_images/card.png");
+    background-size: cover;
+     padding: 20px 60px;
+    position: absolute;
+    top: 550px; 
+    left: 570px;
+    border-radius: 30px;
+}
+.flip-card {
+  width: 300px;
+  height: 300px;
+  perspective: 800px;
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s ease;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, 
+.flip-card-back {
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    }
+
+.flip-card-front img {
+    border-radius: 65px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flip-card-back {
+    background-color: #E76741;
+    border: black 15px solid;
+    border-radius: 65px;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1px;
+    text-align: center;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    padding: 10px;
+    font-size: 18px;
+    white-space: normal
+}
+#cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; 
+    align-items: flex-start; 
+    width: 100%;
+    padding-top: 40px;
+}
+#matchCount {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  padding: 8px 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#matchCount:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
